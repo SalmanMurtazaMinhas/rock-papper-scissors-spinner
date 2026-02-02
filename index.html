@@ -1,0 +1,72 @@
+<!-- UPDATED HTML (game.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="/img/favicon_io/android-chrome-192x192.png" />
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body id="gameBody">
+  <audio src="./audio/okay lets go.mp3" class="click-audio"></audio>
+
+  
+  <div class="setup-panel" id="setupPanel">
+    <h3 class="setup-title">Students List</h3>
+
+    <p class="setup-hint">
+      Add one student per line, then click SAVE. Keep the total count even.
+    </p>
+
+    <textarea id="studentsInput" class="setup-textarea" placeholder="Example:
+Salman
+Zainab
+Bashayer"></textarea>
+
+    <div class="setup-actions">
+      <button class="setup-btn" id="saveStudentsBtn" type="button">SAVE</button>
+      <button class="setup-btn danger" id="clearStudentsBtn" type="button">CLEAR</button>
+    </div>
+
+    <div class="setup-meta">
+      <span id="studentsCountLabel">0 students</span>
+      <span id="studentsWarnLabel"></span>
+    </div>
+  </div>
+
+  <div class="flex-con">
+    <div class="remain"></div>
+
+    <div class="names-con">
+      <div class="names">
+        <h3 class="s1"></h3>
+      </div>
+      <h3 class="vs">VS</h3>
+      <div class="names">
+        <h3 class="s2"></h3>
+      </div>
+    </div>
+
+    <div class="button-con">
+        <div class="toolbar">
+        <button type="button" class="manageBtn" id="toggleSetupBtn">STUDENTS</button>
+        <!-- <button type="button" class="manageBtn danger" id="clearStudentsBtn">CLEAR</button> -->
+        </div>
+
+        <button onclick="randm()" class="nextButton">NEXT</button>
+    </div>
+
+    <h2 id="credit">Made By Salman Murtaza</h2>
+  </div>
+
+  <img alt="" class="dance1" />
+  <img alt="" class="dance2" />
+  <img alt="" class="dance3" />
+</body>
+</html>

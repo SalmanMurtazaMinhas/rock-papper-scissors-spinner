@@ -1,0 +1,261 @@
+#gameBody{
+    margin: 0;
+    background-image: url('../img/page 2.gif');
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#homeBody {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+}
+#startButton {
+    font-size: 30px;
+    /* left: 42%; */
+    border-radius: 20px;
+
+}
+
+.flex-con {
+    font-size: 40px;
+    color: rgb(74, 74, 82);
+    height: 100vh;
+    width: 100vw;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.s1 {
+    color: brown;
+}
+.s2 {
+    color: blue;
+    /* padding-right: 120px; */
+
+}
+
+.vs {
+    /* position: absolute; */
+    /* left: 47%; */
+    color: rgb(166, 162, 162);
+}
+.names-con {
+    display: flex;
+    width: 94vw;
+    justify-content: center;
+    justify-content: space-around;
+}
+.button-con {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    position: absolute;
+    bottom: 4%;
+    font-family: 'Press Start 2P', cursive;
+    border: 0;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.dance1, .dance2, .dance3 {
+    position: fixed;
+}
+
+.dance1 {
+    left: 100px;
+    width: 350px;
+}
+
+.dance2 {
+    width: 450px;
+}
+
+.dance3 {
+    right: 10px;
+    width: 600px;
+}
+
+.remain{
+    position: fixed;
+    color: rgb(210, 210, 210);
+    top: 20vh;
+    font-size: 35px;
+    /* margin-top: -10%; */
+}
+
+.names {
+    width: 40%;
+    text-align: center;
+    /* margin-bottom: 50px; */
+}
+
+#credit {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    color: white;
+    /* top: 20px; */
+}
+
+.setup-panel{
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(680px, 92vw);
+  background: rgba(0,0,0,0.65);
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 14px;
+  padding: 14px 14px 12px;
+  z-index: 20;
+  color: #fff;
+  backdrop-filter: blur(6px);
+}
+
+.setup-title{
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: rgb(210, 210, 210);
+}
+
+.setup-hint{
+  margin: 0 0 10px 0;
+  font-size: 10px;
+  line-height: 1.5;
+  color: rgb(210, 210, 210);
+}
+
+.setup-textarea{
+  width: 100%;
+  height: 120px;
+  resize: vertical;
+  border-radius: 10px;
+  border: 2px solid rgba(255,255,255,0.15);
+  padding: 10px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  line-height: 1.6;
+  outline: none;
+}
+
+.setup-actions{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.setup-btn{
+  position: static;          
+  bottom: auto;               
+  font-size: 14px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  box-shadow: none;
+  background-color: #4CAF50;
+}
+
+.setup-btn:hover{ background-color: #3e8e41; }
+
+.setup-btn:active{
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+/* .setup-btn.danger{
+  background-color: #d9534f;
+}
+
+.setup-btn.danger:hover{
+  background-color: #c64541;
+} */
+
+.setup-meta{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 10px;
+  color: rgb(210, 210, 210);
+}
+
+#studentsWarnLabel{
+  color: #ffd54f;
+}
+
+.setup-panel{
+  display: none;
+}
+.setup-panel.is-open{
+  display: block;
+}
+
+.toolbar{
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+
+  display: flex;
+  gap: 10px;
+}
+.manageBtn{
+  position: static;
+  font-size: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.manageBtn.danger{
+  background-color: #d9534f;
+}
+
+.manageBtn.danger:hover{
+  background-color: #c64541;
+}
+
